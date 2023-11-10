@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            drew: '#bf0005',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-green-800 sm:bg-red-800 lg:bg-blue-900 ">
+  <!-- Nav -->
+  <nav class="bg-clifford ite container mx-auto rounded-lg text-center sm:text-left">
+    <div class="flex items-center justify-between p-3">
+      <div>
+        <img src="Pictures/Arsenal Cake.jpg" alt="" class="w-20 rounded-full">
+      </div>
+      <div class="flex space-x-24 xxlg:hidden">
+        <a href="" class="hover:text-white hover:underline hover:underline-offset-4">Home</a>
+        <a href="" class="hover:text-white hover:underline hover:underline-offset-4">About Us</a>
+        <a href="" class="hover:text-white hover:underline hover:underline-offset-4">Products</a>
+        <a href="" class="hover:text-white hover:underline hover:underline-offset-4">Contact Us</a>
+      </div>
+      <a href="" class="px-7 bg-white text-red-300 rounded">
+        login
+      </a>
+    </div>
+
+  </nav>
+  <!-- hero -->
+  <section id="hero">
+    <div class="container flex flex-col-reverse items-center md:flex-row mx-auto">
+      <div class="flex flex-col text-white md:w-1/2 bg-gray-500 rounded-sm">
+        <h1 class="max-w-md text4xl font-bold text-white text-center text-green-800 sm:text-red-800 lg:text-blue-900">Tailwind</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, natus repellat dolor amet repellendus cum sint deleniti, error maxime ullam architecto reprehenderit quibusdam at porro?
+        </p>
+        <a href="" class="px-7 bg-white text-red-300 rounded">
+          login
+        </a>
+      </div>
+      <div class="flex flex-col text-white md:w-1/2 justify-center items-center">
+        <img src="Pictures/40 Birthday Cake.jpg" alt="" class="rounded-xl" style="width: 200px; height: 200px;">
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer p-10 bg-base-200 text-base-content">
+    <nav>
+      <header class="footer-title">Services</header> 
+      <a class="link link-hover">Branding</a> 
+      <a class="link link-hover">Design</a> 
+      <a class="link link-hover">Marketing</a> 
+      <a class="link link-hover">Advertisement</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Company</header> 
+      <a class="link link-hover">About us</a> 
+      <a class="link link-hover">Contact</a> 
+      <a class="link link-hover">Jobs</a> 
+      <a class="link link-hover">Press kit</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Legal</header> 
+      <a class="link link-hover">Terms of use</a> 
+      <a class="link link-hover">Privacy policy</a> 
+      <a class="link link-hover">Cookie policy</a>
+    </nav> 
+    <form>
+      <header class="footer-title">Newsletter</header> 
+      <fieldset class="form-control w-80">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label> 
+        <div class="relative">
+          <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
+          <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+</body>
+</html>
